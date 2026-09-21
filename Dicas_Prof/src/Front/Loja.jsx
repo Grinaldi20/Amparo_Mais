@@ -579,9 +579,10 @@ function BraceletSection() {
       <div className="section__inner split">
         <Reveal className="split__media">
           <div className="split__glow" aria-hidden="true" />
-           <img src={pulseiraAmparo} 
+          <img src={pulseiraAmparo} 
           alt="Pulseira AMPARO+"  
           className="hero__image" />
+          
         </Reveal>
 
         <div className="split__content">
@@ -1153,28 +1154,17 @@ function EcosystemSection() {
    COMPONENTE — CREATOR CARD
    ========================================================================== */
 function CreatorCard({ name, role, bio, linkedin, github, delay = 0 }) {
-  return (
-    <Reveal className="creator-card" delay={delay}>
-      <div className="creator-card__photo" aria-hidden="true">
-        <Users size={28} />
-      </div>
-      <h3>{name}</h3>
-      <span className="creator-card__role">{role}</span>
-      <p>{bio}</p>
-      <div className="creator-card__links">
-        <a href={linkedin} aria-label={`LinkedIn de ${name}`}>
-          <Linkedin size={18} />
-          <span>LinkedIn</span>
-        </a>
-        <a href={github} aria-label={`GitHub de ${name}`}>
-          <Github size={18} />
-          <span>GitHub</span>
-        </a>
-      </div>
-    </Reveal>
-  );
+  
 }
 
+/* ==========================================================================
+   SEÇÃO — CRIADORES
+   ========================================================================== */
+function CreatorsSection() {
+  
+   
+  
+}
 
 /* ==========================================================================
    COMPONENTE — FOOTER
