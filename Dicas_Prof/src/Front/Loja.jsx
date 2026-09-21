@@ -1175,26 +1175,6 @@ function CreatorCard({ name, role, bio, linkedin, github, delay = 0 }) {
   );
 }
 
-/* ==========================================================================
-   SEÇÃO — CRIADORES
-   ========================================================================== */
-function CreatorsSection() {
-  return (
-    <section id="criadores" className="section">
-      <div className="section__inner">
-        <Reveal as="h2" className="section__title">
-          Quem está por trás do AMPARO+
-        </Reveal>
-
-        <div className="creators-grid">
-          {CREATORS.map((creator, i) => (
-            <CreatorCard key={creator.name} {...creator} delay={i * 100} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ==========================================================================
    COMPONENTE — FOOTER
